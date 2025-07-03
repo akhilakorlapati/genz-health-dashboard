@@ -1,0 +1,18 @@
+# Generate requirements.txt contents based on known packages used in the project
+
+required_packages = [
+    "streamlit",
+    "pandas",
+    "plotly"
+]
+
+# Optional packages based on preprocessing/modeling work
+optional_packages = [
+    "scikit-learn",
+    "xgboost",
+    "joblib"
+]
+
+# Format into a requirements.txt-style string
+requirements_txt = "\n".join(required_packages + optional_packages)
+requirements_txt
