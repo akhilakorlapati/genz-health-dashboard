@@ -5,7 +5,7 @@ import plotly.express as px
 # 1. Load and Preprocess Data
 @st.cache_data
 def load_data():
-    return pd.read_csv(r"D:\Projects\project 2\data\GenZ_Health_Insights_BRFFS2023.csv")
+    return pd.read_csv("GenZ_Health_Insights_BRFFS2023.csv")
 
 df = load_data()
 
